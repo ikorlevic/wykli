@@ -11,4 +11,4 @@ class MainView{
     }
 }
 
-mvdom.display(new MainView('data'), 'main'); // by default will append last ('last') to body
+mvdom.display(new MainView('data'), document.getElementById('main')); // by default will append last ('last') to body
