@@ -21,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/ikorlevic/wykli/issues"
   },
-  "homepage": "https://github.com/ikorlevic/wykli#readme"
+  "homepage": "https://github.com/ikorlevic/wykli#readme",
+  "dependencies": {
+    "handlebars": "^4.1.2",
+    "mvdom": "^0.8.6"
+  }
 }
