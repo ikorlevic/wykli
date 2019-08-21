@@ -1,0 +1,24 @@
+{
+  "name": "wykli",
+  "version": "1.0.0",
+  "description": "small sprinting tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikorlevic/wykli.git"
+  },
+  "keywords": [
+    "weekly",
+    "sprint",
+    "tool"
+  ],
+  "author": "ikorlevic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ikorlevic/wykli/issues"
+  },
+  "homepage": "https://github.com/ikorlevic/wykli#readme"
+}
