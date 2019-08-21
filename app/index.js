@@ -7,8 +7,8 @@ class MainView{
         this.data = data;
     }
     create(){
-        return "hello"
+        return '<div id="main"></div>'
     }
 }
 
-mvdom.display(new MainView('data'),'#main'); // by default will append last ('last') to body
+mvdom.display(new MainView('data'),'body','first'); // by default will append last ('last') to body
