@@ -1,0 +1,25 @@
+.main{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.main > * {
+    flex: 1 100%;
+}
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+    /* We tell both sidebars to share a row */
+    #sidebar { flex: 1 auto; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+    /* We invert order of first sidebar and main
+     * And tell the main element to take twice as much width as the other two sidebars
+     */
+    #content { flex: 2 0px; }
+    #sidebar { order: 1; }
+    #content    { order: 2; }
+    #toolbar  { order: 4; }
+}
