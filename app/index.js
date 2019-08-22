@@ -3,8 +3,8 @@ var mongo = require('mongodb').MongoClient;
 var mvdom = require("mvdom");
 const url = 'mongodb://localhost:27017';
 var Sidebar = require("./structure/Sidebar");
-var header = require("./structure/Header");
-var toolbar = require("./structure/Toolbar");
+var Header = require("./structure/Header");
+var Toolbar = require("./structure/Toolbar");
 
 
 class MainView {
@@ -19,7 +19,10 @@ class MainView {
         return `<div id="main"><div id="header"></div><div id="sidebar"></div><div id="content"></div><div id="toolbar"></div></div>`;
     }
     postDisplay(){
-        mvdom.display(new Sidebar(),mvdom.first(this.el ,"sidebar"));
+        var view = this;
+        mvdom.display(new Header(),mvdom.first(view.el ,"#header"));
+        mvdom.display(new Sidebar(),mvdom.first(view.el ,"#sidebar"));
+        mvdom.display(new Toolbar(),mvdom.first(view.el ,"#toolbar"));
     }
 }
 
