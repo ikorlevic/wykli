@@ -3,6 +3,9 @@ var mongo = require('mongodb').MongoClient;
 var mvdom = require("mvdom");
 
 class Sidebar{
+    constructor(data){
+        this.data = data
+    }
     create(){
         return `<h2>Sidebar</h2>`;
     }

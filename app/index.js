@@ -2,7 +2,7 @@ var handles = require('handlebars');
 var mongo = require('mongodb').MongoClient;
 var mvdom = require("mvdom");
 const url = 'mongodb://localhost:27017';
-var sidebar = require("./structure/Sidebar");
+var sidebar = require("./structure/Sidebar.js");
 var header = require("./structure/Header");
 var toolbar = require("./structure/Toolbar");
 
