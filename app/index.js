@@ -2,7 +2,7 @@ require('handlebars');
 require('mongodb');
 var mvdom = require("mvdom");
 
-class MainView implements View{
+class MainView implements mvdom.View{
     constructor(data){
         this.data = data
     }
