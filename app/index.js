@@ -3,15 +3,15 @@ require('mongodb');
 import { display, remove, View } from "mvdom";
 
 class MainView implements View{
-    id!: 'main';
-    name!: 'main';
-    el!: 'div';
-
     constructor(data){
-        this.data = data;
+        this.data = data
+    },
+    init(){
+        var view = this; // best practice
+        view.el;
     },
     create(){
-        return '<div id="main"></div>'
+        return '<div id="main">${this.data}</div>'
     }
 }
 
