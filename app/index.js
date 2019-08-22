@@ -11,7 +11,7 @@ class MainView {
         view.el;
     }
     create(){
-        return '<div id="main">${this.data}</div>'
+        return `<div id="main">${this.data}</div>`;
     }
 }
 
