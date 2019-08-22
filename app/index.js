@@ -19,7 +19,7 @@ class MainView {
         return `<div id="main"><div id="header"></div><div id="sidebar"></div><div id="content"></div><div id="toolbar"></div></div>`;
     }
     postDisplay(){
-        mvdom.display(new Sidebar(), first(this.el ,"sidebar"));
+        mvdom.display(new Sidebar(),mvdom.first(this.el ,"sidebar"));
     }
 }
 
