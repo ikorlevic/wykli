@@ -14,3 +14,4 @@ class Sidebar{
         view.el;
     }
 }
+module.exports = Sidebar;

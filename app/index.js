@@ -2,7 +2,7 @@ var handles = require('handlebars');
 var mongo = require('mongodb').MongoClient;
 var mvdom = require("mvdom");
 const url = 'mongodb://localhost:27017';
-var sidebar = require("./structure/Sidebar.js");
+var Sidebar = require("./structure/Sidebar");
 var header = require("./structure/Header");
 var toolbar = require("./structure/Toolbar");
 
@@ -19,7 +19,7 @@ class MainView {
         return `<div id="main"><div id="header"></div><div id="sidebar"></div><div id="content"></div><div id="toolbar"></div></div>`;
     }
     postDisplay(){
-        mvdom.display(new sidebar(), this.el.find("sidebar"));
+        mvdom.display(new Sidebar(), first(this.el ,"sidebar"));
     }
 }
 
