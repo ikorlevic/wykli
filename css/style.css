@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #main{
     display: flex;
     flex-flow: row wrap;
@@ -21,5 +26,6 @@
     #content { flex: 2 0px; }
     #sidebar { order: 1; }
     #content    { order: 2; }
+    #account { order: 3; }
     #toolbar  { order: 4; }
 }

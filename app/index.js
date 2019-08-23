@@ -16,7 +16,7 @@ class MainView {
         view.el;
     }
     create(){
-        return `<div id="main"><div id="header"></div><div id="sidebar"></div><div id="content"></div><div id="toolbar"></div></div>`;
+        return `<div id="main"><div id="header"></div><div id="sidebar"></div><div id="content"></div><div id="account"></div><div id="toolbar"></div></div>`;
     }
     postDisplay(){
         var view = this;
