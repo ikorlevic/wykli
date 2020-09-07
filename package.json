@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/ikorlevic/wykli#readme",
   "dependencies": {
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.5.3",
     "mongodb": "^3.3.0",
     "mongodb-client-encryption": "^0.3.0",
     "mvdom": "^0.8.6",
